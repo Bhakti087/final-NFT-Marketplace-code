@@ -55,6 +55,8 @@ import founder3 from "./founder3.jpg";
 import founder4 from "./founder4.jpg";
 import loader from "./loadergif.gif";
 import errorgif from "./error.gif";
+import heroanimals from "./heroanimals.png"
+import Wildcard from "./WildCardlogo.png"
 
 export default {
   hero2,
@@ -114,4 +116,5 @@ export default {
   zgcmq,
   loader,
   errorgif,
+  heroanimals , Wildcard,
 };

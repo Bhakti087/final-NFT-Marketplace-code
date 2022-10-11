@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import { DiJqueryLogo } from "react-icons/di";
 import {
   TiSocialFacebook,
@@ -7,8 +7,7 @@ import {
   TiSocialTwitter,
   TiSocialYoutube,
   TiSocialInstagram,
-  TiArrowSortedDown,
-  TiArrowSortedUp,
+
 } from "react-icons/ti";
 import { RiSendPlaneFill } from "react-icons/ri";
 
@@ -27,9 +26,8 @@ const Footer = () => {
             <DiJqueryLogo className={Style.footer_box_social_logo} />
           </a>
           <p>
-            The world’s first and largest digital marketplace for crypto
-            collectibles and non-fungible tokens (NFTs). Buy, sell, and discover
-            exclusive digital items.
+            The world’s first and largest digital marketplace for and non-fungible tokens (NFTs). Buy, sell, and contribute
+            towards wildlife.
           </p>
 
           <div className={Style.footer_social}>
@@ -70,8 +68,7 @@ const Footer = () => {
           </div>
           <div className={Style.subscribe_box_info}>
             <p>
-              Discover, collect, and sell extraordinary NFTs OpenSea is the
-              world first and largest NFT marketplace
+              Discover, collect, and sell extraordinary NFTs.
             </p>
           </div>
         </div>

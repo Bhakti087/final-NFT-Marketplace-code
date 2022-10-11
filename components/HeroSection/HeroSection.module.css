@@ -29,6 +29,10 @@
     }
 }
 
+.heroSection_box_left h1 span {
+    color: #1EB854;
+}
+
 @media screen and (max-width: 55em) {
     .heroSection_box{
         grid-template-columns: 1fr;

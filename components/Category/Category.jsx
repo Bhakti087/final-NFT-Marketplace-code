@@ -10,48 +10,29 @@ const Category = () => {
   const CategoryArray = [
     {
       images: images.creatorbackground1,
-      name: "Dance Monkey",
+      name: "Tigers",
     },
     {
       images: images.creatorbackground2,
-      name: "Sports",
+      name: "Pandas",
     },
     {
       images: images.creatorbackground3,
-      name: "Entirtment Art",
+      name: "Eagles",
     },
     {
       images: images.creatorbackground4,
-      name: "Time Life",
+      name: "Polar Bears",
     },
     {
       images: images.creatorbackground5,
-      name: "Animals Art",
+      name: "Reptiles",
     },
     {
       images: images.creatorbackground6,
-      name: "Music",
+      name: "Whales",
     },
-    {
-      images: images.creatorbackground7,
-      name: "Digital Arts",
-    },
-    {
-      images: images.creatorbackground8,
-      name: "Hubby",
-    },
-    {
-      images: images.creatorbackground8,
-      name: "Bad Arts",
-    },
-    {
-      images: images.creatorbackground9,
-      name: " Arts",
-    },
-    {
-      images: images.creatorbackground10,
-      name: "My Fav",
-    },
+  
   ];
   return (
     <div className={Style.box_category}>

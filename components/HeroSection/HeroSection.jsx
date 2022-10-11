@@ -17,10 +17,10 @@ const HeroSection = () => {
     <div className={Style.heroSection}>
       <div className={Style.heroSection_box}>
         <div className={Style.heroSection_box_left}>
-          <h1>{titleData} 🖼️</h1>
+          <h1><h1>Create , Buy and Sell NFTs for the <span>ENDANGERED.</span></h1></h1>
           <p>
-            Discover the most outstanding NTFs in all topics of life. Creative
-            your NTFs and sell them
+          A modern and authentic way to invest , raise funds and protect
+            animals.
           </p>
           <Button
             btnName="Start your search"
@@ -29,7 +29,7 @@ const HeroSection = () => {
         </div>
         <div className={Style.heroSection_box_right}>
           <Image
-            src={images.hero}
+            src={images.heroanimals}
             alt="Hero section"
             width={600}
             height={600}

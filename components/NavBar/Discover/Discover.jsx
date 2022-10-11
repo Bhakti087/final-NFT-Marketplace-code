@@ -7,12 +7,12 @@ import Style from "./Discover.module.css";
 const Discover = () => {
   //--------DISCOVER NAVIGATION MENU
   const discover = [
+    // {
+    //   name: "Collection",
+    //   link: "collection",
+    // },
     {
-      name: "Collection",
-      link: "collection",
-    },
-    {
-      name: "Search",
+      name: "Explore NFT's",
       link: "searchPage",
     },
     {
@@ -23,22 +23,16 @@ const Discover = () => {
       name: "NFT Details",
       link: "NFT-details",
     },
+    
     {
-      name: "Account Setting",
-      link: "account",
-    },
-    {
-      name: "Upload NFT",
+      name: "Create NFT",
       link: "uploadNFT",
     },
     {
       name: "Connect Wallet",
       link: "connectWallet",
     },
-    {
-      name: "Blog",
-      link: "blog",
-    },
+    
   ];
   return (
     <div>
