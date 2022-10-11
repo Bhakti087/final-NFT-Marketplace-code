@@ -27,32 +27,7 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
 
   const router = useRouter();
 
-  const categoryArry = [
-    {
-      image: images.nft_image_1,
-      category: "Sports",
-    },
-    {
-      image: images.nft_image_2,
-      category: "Arts",
-    },
-    {
-      image: images.nft_image_3,
-      category: "Music",
-    },
-    {
-      image: images.nft_image_1,
-      category: "Digital",
-    },
-    {
-      image: images.nft_image_2,
-      category: "Time",
-    },
-    {
-      image: images.nft_image_3,
-      category: "Photography",
-    },
-  ];
+
 
   return (
     <div className={Style.upload}>
@@ -73,17 +48,17 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
 
       <div className={Style.upload_box}>
         <div className={formStyle.Form_box_input}>
-          <label htmlFor="nft">Item Name</label>
+          <label htmlFor="nft">Animal Name</label>
           <input
             type="text"
-            placeholder="shoaib bhai"
+            placeholder="Endangered Name"
             className={formStyle.Form_box_input_userName}
             onChange={(e) => setName(e.target.value)}
           />
         </div>
 
         <div className={formStyle.Form_box_input}>
-          <label htmlFor="website">Website</label>
+          <label htmlFor="website">Organisation's Website </label>
           <div className={formStyle.Form_box_input_box}>
             <div className={formStyle.Form_box_input_box_icon}>
               <MdOutlineHttp />
@@ -97,9 +72,7 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
           </div>
 
           <p className={Style.upload_box_input_para}>
-            Ciscrypt will include a link to this URL on this item's detail page,
-            so that users can click to learn more about it. You are welcome to
-            link to your own webpage with more details.
+            A Website to check if you are a legitimate organisation 
           </p>
         </div>
 
@@ -115,18 +88,18 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
           ></textarea>
           <p>
             The description will be included on the item's detail page
-            underneath its image. Markdown syntax is supported.
+            underneath its image.
           </p>
         </div>
 
         <div className={formStyle.Form_box_input}>
-          <label htmlFor="name">Choose collection</label>
+          {/* <label htmlFor="name">Choose collection</label>
           <p className={Style.upload_box_input_para}>
             Choose an exiting collection or create a new one
-          </p>
+          </p> */}
 
           <div className={Style.upload_box_slider_div}>
-            {categoryArry.map((el, i) => (
+            {/* {categoryArry.map((el, i) => (
               <div
                 className={`${Style.upload_box_slider} ${
                   active == i + 1 ? Style.active : ""
@@ -150,13 +123,13 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
                 </div>
                 <p>Crypto Legend - {el.category} </p>
               </div>
-            ))}
+            ))} */}
           </div>
         </div>
 
         <div className={formStyle.Form_box_input_social}>
           <div className={formStyle.Form_box_input}>
-            <label htmlFor="Royalties">Royalties</label>
+            <label htmlFor="Royalties">% Donation</label>
             <div className={formStyle.Form_box_input_box}>
               <div className={formStyle.Form_box_input_box_icon}>
                 <FaPercent />
@@ -168,7 +141,7 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
               />
             </div>
           </div>
-          <div className={formStyle.Form_box_input}>
+          {/* <div className={formStyle.Form_box_input}>
             <label htmlFor="size">Size</label>
             <div className={formStyle.Form_box_input_box}>
               <div className={formStyle.Form_box_input_box_icon}>
@@ -180,7 +153,7 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
                 onChange={(e) => setFileSize(e.target.value)}
               />
             </div>
-          </div>
+          </div> */}
           <div className={formStyle.Form_box_input}>
             <label htmlFor="Propertie">Propertie</label>
             <div className={formStyle.Form_box_input_box}>
