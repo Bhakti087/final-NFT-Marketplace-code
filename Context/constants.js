@@ -4,5 +4,5 @@
 import nftMarketplace from '../artifacts/contracts/NFTMarketplace.sol/NFTMarketplace.json'
 
 export const NFTMarketplaceAddress =
-  '0x2A6553F5C58EfCe73B9B010E59C5d5D2eD318BFF'
+  '00x674e0fFc0A05F98360B159eac3b35265169190B3'
 export const NFTMarketplaceABI = nftMarketplace.abi

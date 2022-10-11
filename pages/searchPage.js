@@ -1,50 +1,51 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState, useContext } from 'react'
 
 //INTRNAL IMPORT
-import Style from "../styles/searchPage.module.css";
-import { Slider, Brand, Loader } from "../components/componentsindex";
-import { SearchBar } from "../SearchPage/searchBarIndex";
-import { Filter } from "../components/componentsindex";
+import Style from '../styles/searchPage.module.css'
+import { Slider, Brand, Loader } from '../components/componentsindex'
+import { SearchBar } from '../SearchPage/searchBarIndex'
+import { Filter } from '../components/componentsindex'
 
-import { NFTCardTwo, Banner } from "../collectionPage/collectionIndex";
-import images from "../img";
+import { NFTCardTwo, Banner } from '../collectionPage/collectionIndex'
+import images from '../img'
 
 //SMART CONTRACT IMPORT
-import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";
+import { NFTMarketplaceContext } from '../Context/NFTMarketplaceContext'
 
 const searchPage = () => {
-  const { fetchNFTs, setError } = useContext(NFTMarketplaceContext);
-  const [nfts, setNfts] = useState([]);
-  const [nftsCopy, setNftsCopy] = useState([]);
+  const { fetchNFTs, setError } = useContext(NFTMarketplaceContext)
+  const [nfts, setNfts] = useState([])
+  const [nftsCopy, setNftsCopy] = useState([])
 
   useEffect(() => {
     try {
       fetchNFTs().then((items) => {
-        setNfts(items.reverse());
-        setNftsCopy(items);
-      });
+        setNfts(items)
+        setNftsCopy(items)
+        console.log(nfts)
+      })
     } catch (error) {
-      setError("Please reload the browser", error);
+      setError('Please reload the browser', error)
     }
-  }, []);
+  }, [])
 
   const onHandleSearch = (value) => {
     const filteredNFTS = nfts.filter(({ name }) =>
       name.toLowerCase().includes(value.toLowerCase())
-    );
+    )
 
     if (filteredNFTS.length === 0) {
-      setNfts(nftsCopy);
+      setNfts(nftsCopy)
     } else {
-      setNfts(filteredNFTS);
+      setNfts(filteredNFTS)
     }
-  };
+  }
 
   const onClearSearch = () => {
     if (nfts.length && nftsCopy.length) {
-      setNfts(nftsCopy);
+      setNfts(nftsCopy)
     }
-  };
+  }
 
   // const collectionArray = [
   //   images.nft_image_1,
@@ -68,7 +69,7 @@ const searchPage = () => {
       <Slider />
       <Brand />
     </div>
-  );
-};
+  )
+}
 
-export default searchPage;
+export default searchPage

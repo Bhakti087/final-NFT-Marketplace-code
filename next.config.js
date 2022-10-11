@@ -3,8 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["daulat-nft-marketplace.infura-ipfs.io", "infura-ipfs.io"],
+    domains: ['wildcardnft.infura-ipfs.io', 'infura-ipfs.io'],
   },
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig

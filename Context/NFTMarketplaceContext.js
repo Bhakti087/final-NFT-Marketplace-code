@@ -13,7 +13,7 @@ const auth = `Basic ${Buffer.from(`${projectId}:${projectSecretKey}`).toString(
   'base64'
 )}`
 
-const subdomain = 'your sub domain'
+const subdomain = 'https://wildcardnft.infura-ipfs.io'
 
 const client = ipfsHttpClient({
   host: 'infura-ipfs.io',
