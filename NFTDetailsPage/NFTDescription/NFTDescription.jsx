@@ -5,20 +5,11 @@ import { useRouter } from "next/router";
 import {
   MdVerified,
   MdCloudUpload,
-  MdTimer,
-  MdReportProblem,
-  MdOutlineDeleteSweep,
+
 } from "react-icons/md";
 import { BsThreeDots } from "react-icons/bs";
 import { FaWallet, FaPercentage } from "react-icons/fa";
-import {
-  TiSocialFacebook,
-  TiSocialLinkedin,
-  TiSocialTwitter,
-  TiSocialYoutube,
-  TiSocialInstagram,
-} from "react-icons/ti";
-import { BiTransferAlt, BiDollar } from "react-icons/bi";
+
 
 //INTERNAL IMPORT
 import Style from "./NFTDescription.module.css";
@@ -32,33 +23,9 @@ import { NFTMarketplaceContext } from "../../Context/NFTMarketplaceContext";
 const NFTDescription = ({ nft }) => {
   const [social, setSocial] = useState(false);
   const [NFTMenu, setNFTMenu] = useState(false);
-  // const [history, setHistory] = useState(true);
-  // const [provanance, setProvanance] = useState(false);
-  // const [owner, setOwner] = useState(false);
+
 
   const router = useRouter();
-
-  // const historyArray = [
-  //   images.user1,
-  //   images.user2,
-  //   images.user3,
-  //   images.user4,
-  //   images.user5,
-  // ];
-  // const provananceArray = [
-  //   images.user6,
-  //   images.user7,
-  //   images.user8,
-  //   images.user9,
-  //   images.user10,
-  // ];
-  // const ownerArray = [
-  //   images.user1,
-  //   images.user8,
-  //   images.user2,
-  //   images.user6,
-  //   images.user5,
-  // ];
 
   const openSocial = () => {
     if (!social) {
@@ -118,47 +85,11 @@ const NFTDescription = ({ nft }) => {
               onClick={() => openSocial()}
             />
 
-            {social && (
-              <div className={Style.NFTDescription_box_share_box_social}>
-                <a href="#">
-                  <TiSocialFacebook /> Facebooke
-                </a>
-                <a href="#">
-                  <TiSocialInstagram /> Instragram
-                </a>
-                <a href="#">
-                  <TiSocialLinkedin /> LinkedIn
-                </a>
-                <a href="#">
-                  <TiSocialTwitter /> Twitter
-                </a>
-                <a href="#">
-                  <TiSocialYoutube /> YouTube
-                </a>
-              </div>
-            )}
-
             <BsThreeDots
               className={Style.NFTDescription_box_share_box_icon}
               onClick={() => openNFTMenu()}
             />
 
-            {NFTMenu && (
-              <div className={Style.NFTDescription_box_share_box_social}>
-                <a href="#">
-                  <BiDollar /> Change price
-                </a>
-                <a href="#">
-                  <BiTransferAlt /> Transfer
-                </a>
-                <a href="#">
-                  <MdReportProblem /> Report abouse
-                </a>
-                <a href="#">
-                  <MdOutlineDeleteSweep /> Delete item
-                </a>
-              </div>
-            )}
           </div>
         </div>
         {/* //Part TWO */}
@@ -251,7 +182,7 @@ const NFTDescription = ({ nft }) => {
               >
                 <small>Current Price</small>
                 <p>
-                  {nft.price} Matic <span>( ≈ $0.80591)</span>
+                  {nft.price} Matic
                 </p>
               </div>
 

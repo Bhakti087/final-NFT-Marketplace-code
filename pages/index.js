@@ -66,10 +66,7 @@ const Home = () => {
       <Filter />
       {<NFTCard NFTData={nfts} />}
 
-      <Title
-        heading='Browse by category'
-       
-      />
+      
       <Category />
       {/* <Subscribe /> */}
       {/* <Brand /> */}

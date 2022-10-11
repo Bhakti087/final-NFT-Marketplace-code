@@ -5,6 +5,7 @@ import { BsCircleFill } from "react-icons/bs";
 //INTERNAL IMPORT
 import Style from "./Category.module.css";
 import images from "../../img";
+import Title from "../Title/Title"
 
 const Category = () => {
   const CategoryArray = [
@@ -36,7 +37,11 @@ const Category = () => {
   ];
   return (
     <div className={Style.box_category}>
+       <Title
+        heading='Browse by category'
+      />
       <div className={Style.category}>
+     
         {CategoryArray.map((el, i) => (
           <div className={Style.category_box} key={i + 1}>
             <Image
@@ -50,7 +55,7 @@ const Category = () => {
 
             <div className={Style.category_box_title}>
               <span>
-                <BsCircleFill />
+                <BsCircleFill/>
               </span>
               <div className={Style.category_box_title_info}>
                 <h4>{el.name}</h4>

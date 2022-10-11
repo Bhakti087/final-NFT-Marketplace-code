@@ -48,19 +48,17 @@ const NFTCard = ({ NFTData }) => {
             </div>
 
             <div className={Style.NFTCard_box_update}>
-              <div className={Style.NFTCard_box_update_left}>
+              <div>
                 <div
-                  className={Style.NFTCard_box_update_left_like}
-                  onClick={() => likeNft()}
                 >
-                  {like ? (
+                  {/* {like ? (
                     <AiOutlineHeart />
                   ) : (
                     <AiFillHeart
                       className={Style.NFTCard_box_update_left_like_icon}
                     />
-                  )}
-                  {""} 22
+                  )} */}
+                  
                 </div>
               </div>
 

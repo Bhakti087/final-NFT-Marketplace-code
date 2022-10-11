@@ -7,7 +7,7 @@ import Style from "./NFTTabs.module.css";
 const NFTTabs = ({ dataTab, icon }) => {
   return (
     <div className={Style.NFTTabs}>
-      {dataTab.map((el, i) => (
+      {/* {dataTab.map((el, i) => (
         <div className={Style.NFTTabs_box} key={i + 1}>
           <Image
             src={el}
@@ -25,7 +25,7 @@ const NFTTabs = ({ dataTab, icon }) => {
             <small>Jun 14 - 4:12 PM</small>
           </div>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };

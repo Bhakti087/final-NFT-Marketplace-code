@@ -17,10 +17,10 @@ import { TiTick } from "react-icons/ti";
 import Style from "./Filter.module.css";
 
 const Filter = () => {
-  const [filter, setFilter] = useState(true);
+  const [filter, setFilter] = useState(false);
   const [image, setImage] = useState(true);
   const [video, setVideo] = useState(true);
-  const [music, setMusic] = useState(true);
+  // const [music, setMusic] = useState(true);
 
   //FUNCTION SECTION
   const openFilter = () => {
@@ -47,13 +47,13 @@ const Filter = () => {
     }
   };
 
-  const openMusic = () => {
-    if (!music) {
-      setMusic(true);
-    } else {
-      setMusic(false);
-    }
-  };
+  // const openMusic = () => {
+  //   if (!music) {
+  //     setMusic(true);
+  //   } else {
+  //     setMusic(false);
+  //   }
+  // };
 
   return (
     <div className={Style.filter}>

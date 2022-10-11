@@ -55,8 +55,8 @@ const searchPage = () => {
       />
       <Filter />
       {!nfts ? <Loader /> : <NFTCardTwo NFTData={nfts} />}
-      <Slider />
-      <Brand />
+      {/* <Slider /> */}
+      {/* <Brand /> */}
     </div>
   )
 }
