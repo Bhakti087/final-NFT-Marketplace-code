@@ -22,7 +22,6 @@ const searchPage = () => {
       fetchNFTs().then((items) => {
         setNfts(items)
         setNftsCopy(items)
-        console.log(nfts)
       })
     } catch (error) {
       setError('Please reload the browser', error)
@@ -65,7 +64,7 @@ const searchPage = () => {
         onClearSearch={onClearSearch}
       />
       <Filter />
-      {nfts.length == 0 ? <Loader /> : <NFTCardTwo NFTData={nfts} />}
+      {!nfts ? <Loader /> : <NFTCardTwo NFTData={nfts} />}
       <Slider />
       <Brand />
     </div>

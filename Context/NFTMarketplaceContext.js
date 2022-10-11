@@ -28,13 +28,14 @@ const client = ipfsHttpClient({
 import { NFTMarketplaceAddress, NFTMarketplaceABI } from './constants'
 
 //---FETCHING SMART CONTRACT
-const fetchContract = (signerOrProvider) =>
-  new ethers.Contract(
+const fetchContract = (signerOrProvider) => {
+  const contract = new ethers.Contract(
     NFTMarketplaceAddress,
     NFTMarketplaceABI,
     signerOrProvider
   )
-
+    return contract;
+}
 //---CONNECTING WITH SMART CONTRACT
 
 const connectingWithSmartContract = async () => {
@@ -128,7 +129,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
 
       const url = `https://infura-ipfs.io/ipfs/${added.path}`
 
-      await createSale(url, price)
+      await createSale(url, price, false, Math.floor(Math.random() * 1000000))
       router.push('/searchPage')
     } catch (error) {
       setError('Error while creating NFT')
@@ -165,12 +166,11 @@ export const NFTMarketplaceProvider = ({ children }) => {
 
   const fetchNFTs = async () => {
     try {
-      if (currentAccount) {
-        const provider = new ethers.providers.JsonRpcProvider()
-        const contract = fetchContract(provider)
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const signer = provider.getSigner()
+        const contract = fetchContract(signer)
 
         const data = await contract.fetchMarketItems()
-        console.log(data)
 
         const items = await Promise.all(
           data.map(
@@ -201,7 +201,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
 
         // console.log(items);
         return items
-      }
+      
     } catch (error) {
       setError('Error while fetching NFTS')
       setOpenError(true)
