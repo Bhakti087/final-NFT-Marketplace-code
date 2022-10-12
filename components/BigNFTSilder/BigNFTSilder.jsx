@@ -16,8 +16,8 @@ const BigNFTSilder = () => {
     {
       title: "Hello NFT",
       id: 1,
-      name: "Daulat Hussain",
-      collection: "GYm",
+      name: "Jutika",
+      collection: "animals",
       price: "00664 ETH",
       like: 243,
       image: images.user1,

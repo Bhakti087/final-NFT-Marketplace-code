@@ -10,29 +10,26 @@ import Title from "../Title/Title"
 const Category = () => {
   const CategoryArray = [
     {
-      images: images.creatorbackground1,
+      images: images.tigers,
       name: "Tigers",
     },
     {
-      images: images.creatorbackground2,
+      images: images.panda,
       name: "Pandas",
     },
     {
-      images: images.creatorbackground3,
+      images: images.eagle,
       name: "Eagles",
     },
     {
-      images: images.creatorbackground4,
+      images: images.polarBear,
       name: "Polar Bears",
     },
     {
-      images: images.creatorbackground5,
+      images: images.reptiles,
       name: "Reptiles",
     },
-    {
-      images: images.creatorbackground6,
-      name: "Whales",
-    },
+    
   
   ];
   return (
@@ -54,9 +51,7 @@ const Category = () => {
             />
 
             <div className={Style.category_box_title}>
-              <span>
-                <BsCircleFill/>
-              </span>
+             
               <div className={Style.category_box_title_info}>
                 <h4>{el.name}</h4>
                 <small>{i + 1}995 NFTS</small>

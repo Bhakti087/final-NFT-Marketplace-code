@@ -60,10 +60,10 @@
 .NFTDetailsImg_box_details_box,
 .NFTDetailsImg_box_description_box{
     padding: .1rem 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .NFTDetailsImg_box_details_box p{
     line-height: 1;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }

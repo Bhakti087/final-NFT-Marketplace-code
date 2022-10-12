@@ -11,17 +11,17 @@ import { LikeProfile } from "../../components/componentsindex";
 
 const NFTCardTwo = ({ NFTData }) => {
   const [like, setLike] = useState(false);
-  const [likeInc, setLikeInc] = useState(21);
+  // const [likeInc, setLikeInc] = useState(21);
 
-  const likeNFT = () => {
-    if (!like) {
-      setLike(true);
-      setLikeInc(23);
-    } else {
-      setLike(false);
-      setLikeInc(23 + 1);
-    }
-  };
+  // const likeNFT = () => {
+  //   if (!like) {
+  //     setLike(true);
+  //     setLikeInc(23);
+  //   } else {
+  //     setLike(false);
+  //     setLikeInc(23 + 1);
+  //   }
+  // };
 
   return (
     <div className={Style.NFTCardTwo}>
@@ -32,11 +32,11 @@ const NFTCardTwo = ({ NFTData }) => {
               <div className={Style.NFTCardTwo_box_like_box}>
                 <div className={Style.NFTCardTwo_box_like_box_box}>
                   <BsImage className={Style.NFTCardTwo_box_like_box_box_icon} />
-                  <p onClick={() => likeNFT()}>
+                  {/* <p onClick={() => likeNFT()}>
                     {like ? <AiOutlineHeart /> : <AiFillHeart />}
                     {""}
                     <span>{likeInc + 1}</span>
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -57,7 +57,7 @@ const NFTCardTwo = ({ NFTData }) => {
                 <LikeProfile />
                 <p>{el.name}</p>
               </div>
-              <small>4{i + 2}</small>
+              {/* <small>4{i + 2}</small> */}
             </div>
 
             <div className={Style.NFTCardTwo_box_price}>
@@ -66,7 +66,7 @@ const NFTCardTwo = ({ NFTData }) => {
                 <p>{el.price || i + 4} ETH</p>
               </div>
               <p className={Style.NFTCardTwo_box_price_stock}>
-                <MdTimer /> <span>{i + 1} hours left</span>
+                {/* <MdTimer /> <span>{i + 1} hours left</span> */}
               </p>
             </div>
           </div>

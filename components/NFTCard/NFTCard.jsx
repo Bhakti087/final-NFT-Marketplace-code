@@ -62,12 +62,7 @@ const NFTCard = ({ NFTData }) => {
                 </div>
               </div>
 
-              <div className={Style.NFTCard_box_update_right}>
-                <div className={Style.NFTCard_box_update_right_info}>
-                  <small>Remaining time</small>
-                  <p>3h : 15m : 20s</p>
-                </div>
-              </div>
+             
             </div>
 
             <div className={Style.NFTCard_box_update_details}>
@@ -97,7 +92,7 @@ const NFTCard = ({ NFTData }) => {
                 </div>
               </div>
               <div className={Style.NFTCard_box_update_details_category}>
-                <BsImages />
+                
               </div>
             </div>
           </div>

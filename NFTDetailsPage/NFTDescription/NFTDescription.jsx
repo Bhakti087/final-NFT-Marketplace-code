@@ -78,19 +78,7 @@ const NFTDescription = ({ nft }) => {
       <div className={Style.NFTDescription_box}>
         {/* //Part ONE */}
         <div className={Style.NFTDescription_box_share}>
-          <p>Virtual Worlds</p>
-          <div className={Style.NFTDescription_box_share_box}>
-            <MdCloudUpload
-              className={Style.NFTDescription_box_share_box_icon}
-              onClick={() => openSocial()}
-            />
-
-            <BsThreeDots
-              className={Style.NFTDescription_box_share_box_icon}
-              onClick={() => openNFTMenu()}
-            />
-
-          </div>
+          <p>Endangered </p>
         </div>
         {/* //Part TWO */}
         <div className={Style.NFTDescription_box_profile}>
@@ -182,7 +170,7 @@ const NFTDescription = ({ nft }) => {
               >
                 <small>Current Price</small>
                 <p>
-                  {nft.price} Matic
+                  {nft.price} ETH
                 </p>
               </div>
 
@@ -212,12 +200,7 @@ const NFTDescription = ({ nft }) => {
                 />
               )}
 
-              <Button
-                icon=<FaPercentage />
-                btnName="Make offer"
-                handleClick={() => {}}
-                classStyle={Style.button}
-              />
+             
             </div>
 
       

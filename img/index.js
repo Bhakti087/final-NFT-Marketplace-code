@@ -57,6 +57,11 @@ import loader from "./loadergif.gif";
 import errorgif from "./error.gif";
 import heroanimals from "./heroanimals.png"
 import Wildcard from "./WildCardlogo.png"
+import tigers from "./tigers.jpeg"
+import panda from "./panda.jpeg"
+import eagle from "./eagle.jpeg"
+import reptiles from "./reptiles.jpeg" 
+import polarBear from "./polarBear.jpeg"
 
 export default {
   hero2,
@@ -116,5 +121,5 @@ export default {
   zgcmq,
   loader,
   errorgif,
-  heroanimals , Wildcard,
+  heroanimals , Wildcard,tigers, panda, eagle, reptiles, polarBear
 };
